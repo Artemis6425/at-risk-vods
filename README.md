@@ -7,6 +7,7 @@ Announcement tweet: https://twitter.com/TwitchSupport/status/1892277199497043994
 How to check your Highlight hour usage: https://dashboard.twitch.tv/u/YOUR_USERNAME_HERE/content/video-producer
 
 **The FIRST spreadsheet to check the data:** https://docs.google.com/spreadsheets/d/1og5_jv0nNyuG93rroNHvqy3STfk8uWsXLZJHsG-TpjY/
+
 **The SECOND spreadsheet to check the data:** https://docs.google.com/spreadsheets/d/1iHdrv42kfHeMPNlINPZnfK05hh7zSzywkY6nV2tbTjA/
 
 All of this data was gathered between **2/19/25 and 2/28/25**.
