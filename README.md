@@ -6,11 +6,15 @@ Announcement tweet: https://twitter.com/TwitchSupport/status/1892277199497043994
 
 How to check your Highlight hour usage: https://dashboard.twitch.tv/u/YOUR_USERNAME_HERE/content/video-producer
 
-**The FIRST spreadsheet to check the data:** https://docs.google.com/spreadsheets/d/1og5_jv0nNyuG93rroNHvqy3STfk8uWsXLZJHsG-TpjY/
+**The FIRST spreadsheet to check the data:** https://docs.google.com/spreadsheets/d/1EAVbCiEe38htvvtsPIoRwCzK7UZkzHag6FUmvQHGZiE
 
-**The SECOND spreadsheet to check the data:** https://docs.google.com/spreadsheets/d/1iHdrv42kfHeMPNlINPZnfK05hh7zSzywkY6nV2tbTjA/
+**The SECOND spreadsheet to check the data:** https://docs.google.com/spreadsheets/d/1iRaGwf41INXf1ZSfXcdzng81gBtx8h55o9Qb8XWijEE
 
-All of this data was gathered between **2/19/25 and 2/28/25**.
+All of the speedrun.com data was gathered between **2/19/25 and 2/26/25**. The Twitch data was gathered on **3/1/25** (read the "sheet update" below).
+
+**IMPORTANT NOTE:** Despite this effort, this does **NOT** account for any privated/unpublished highlights that someone may have, since Twitch's API does not let you access those (for obvious reasons). Therefore, even runs that are "safe" may still be at risk. Please back up all important runs regardless!
+
+**Sheet update:** If you viewed the sheets before 3/1/25 10pm ET, more runs than intended were marked "at risk", due to a miscalculation on the data I gathered from Twitch. This has been updated on the two spreadsheets and the CSV files uploaded here. I also updated the status notes to be slightly clearer.
 
 ### WHY IS THERE **TWO** SPREADSHEETS?
 
@@ -20,7 +24,7 @@ No, I can't tell you what game is on what sheet. I made sure to split it cleanly
 
 ### WHAT DATA IS **NOT** ON THE SPREADSHEETS?
 
-- Runs with a Youtube link as the primary video attached
+- Runs with only a Youtube link attached (Runs that had a twitch link at all are on these sheets still)
 - Runs with no video links whatsoever
 
 ### WHY DIDN'T YOU GET ...
@@ -41,7 +45,7 @@ If you are NOT on the lists and you still want to help, probably coordinate with
 
 I personally like this tool, but you can use what you want. It allows for **bulk downloading** and **queueing downloads** - https://github.com/lay295/TwitchDownloader
 
-## OTHER FAQ TYPE STUFF
+## FAQ TYPE STUFF
 
 ### HOW MANY RUNS LINK TO TWITCH IN ANY WAY?
 
