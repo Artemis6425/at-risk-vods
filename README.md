@@ -88,4 +88,4 @@ If you'd like to support me (yes I am selling out, I was told to), you can donat
 
 ### ARE YOU GOING TO RELEASE THE CODE YOU USED TO DO THIS?
 
-Right this moment, no. I kinda rushed everything and did some miserable coding practices to get this done. Once I fix those, maybe?? Hoping this never has to be done again, so I don't see the benefit.
+**3/2/25 Update** - As mentioned at the top, I rewrote my code today in a way that can be run for individual games at a time. While the initial data is on my sheets, I understand there are still reasons you would want to re-run the data. It has been put in the `code` folder on this github page. Please don't judge it too hard!!

@@ -1,0 +1,17 @@
+This code was entirely rewritten and tested on 3/2/25. Designed SPECIFICALLY for getting a single game's runs.
+I put a lot of notes in the code so if you're more savvy with it, you can figure out more easily what it does.
+I've also tried my best to be as straightforward as possible for those less savvy, but this will still require some work.
+
+WHAT YOU NEED:
+- node.js
+- A Twitch Application -> https://dev.twitch.tv/console
+
+1. install node.js and the packages mentioned in package.json
+2. create your Twitch Application
+3. edit "generate-twitch-token.js" to add your information, and run it
+4. add your src game ID in "src-part.js" and run it
+5. run "between-part.js"
+6. run "twitch-part.js"
+7. run "create-csv.js"
+
+If everything worked, you now should have a file called "all-runs.csv" that should be a game-specific version of the sheets that I created.
