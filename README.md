@@ -89,3 +89,5 @@ If you'd like to support me (yes I am selling out, I was told to), you can donat
 ### ARE YOU GOING TO RELEASE THE CODE YOU USED TO DO THIS?
 
 **3/2/25 Update** - I rewrote my code today in a way that can be run for individual games at a time. While the initial data is on my sheets, I understand there are still reasons you would want to re-run the data. It has been put in the `code` folder on this github page. Please don't judge it too hard!!
+
+**3/10/25 Update** - I updated the code to remove the use of 'axios' because I'm dumb and didn't realize fetch was built in. Don't ask pls
