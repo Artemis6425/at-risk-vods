@@ -1,4 +1,3 @@
-const axios = require("axios");
 const fs = require("fs");
 const util = require("util");
 const writeFile = util.promisify(fs.writeFile); 
@@ -16,8 +15,8 @@ async function sleep(ms) {
 var countedResponse = 0
 async function fetchData(url, allData = []) {
     try {
-        const response = await axios.get(url);
-        const data = response.data
+        const response = await fetch(url, {method: 'GET'});
+        const data = await response.json()
         allData.push(...data.data);
 
         // Check if there is a "next" link in pagination
@@ -47,8 +46,9 @@ async function fetchData(url, allData = []) {
 // This is the function that actually goes through every step of the SRC process
 async function SRC(){
     // This part gets the internal game code
-    var response = await axios.get(`https://www.speedrun.com/api/v1/games/${src_game_code}`)
-    var src_internal_code = response.data.data.id
+    var response = await fetch(`https://www.speedrun.com/api/v1/games/${src_game_code}`, {method: 'GET'})
+    var src_internal_code = await response.json()
+    src_internal_code = src_internal_code.data.id
     if(src_internal_code == null){
         console.log(`ERROR: Could not find the game with code "${src_game_code}"`)
         return

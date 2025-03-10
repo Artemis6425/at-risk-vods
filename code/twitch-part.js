@@ -1,4 +1,3 @@
-const axios = require("axios");
 const fs = require("fs");
 const util = require("util");
 const writeFile = util.promisify(fs.writeFile); 
@@ -33,15 +32,17 @@ var allVideoData = []
 async function getTwitchVideo(videoIdString) {
     return new Promise(async (resolve, reject) => {
         try {
-            const response = await axios.get(`https://api.twitch.tv/helix/videos?id=${videoIdString}`, {
+            var response = await fetch(`https://api.twitch.tv/helix/videos?id=${videoIdString}`, {
+                method: 'GET',
                 headers: {
                     'Client-ID': clientId,
                     'Authorization': `Bearer ${access_token}`
                 }
             });
+            response = await response.json()
 
             // This saves the data to the array to deal with later
-            allVideoData = allVideoData.concat(response.data.data)
+            allVideoData = allVideoData.concat(response.data)
 
             resolve()
         } catch (error) {
@@ -54,23 +55,23 @@ async function getTwitchVideo(videoIdString) {
 // This is the function that requests every highlight from a user from the Twitch API
 async function getTwitchUser(url, allData = []) {
         try {
-            const response = await axios.get(url, {
+            var response = await fetch(url, {
+                method: 'GET',
                 headers: {
                     'Client-ID': clientId,
                     'Authorization': `Bearer ${access_token}`
                 }
             });
+            response = await response.json()
+            var data = response.data;
 
-            const data = response.data;
-            allData.push(...data.data);
+            allData.push(...data);
 
             // Pagination (Twitch does it with a cursor, which is cool)
-            const cursor = data.pagination.cursor;
-
-            if (cursor) {
+            if (data.pagination) {
                 // The Twitch API allows for ~800 requests per minute. This allows for compliance
                 await sleep(80);
-                return getTwitchUser(`${url}&after=${cursor}`, allData);
+                return getTwitchUser(`${url}&after=${data.pagination.cursor}`, allData);
             } else {
                 return allData;
             }

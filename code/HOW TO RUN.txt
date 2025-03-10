@@ -2,6 +2,8 @@ This code was entirely rewritten and tested on 3/2/25. Designed SPECIFICALLY for
 I put a lot of notes in the code so if you're more savvy with it, you can figure out more easily what it does.
 I've also tried my best to be as straightforward as possible for those less savvy, but this will still require some work.
 
+UPDATE 3/10/25: removed 'axios' since it's unnecessary, and switched it to the built-in 'fetch'
+
 WHAT YOU NEED:
 - node.js
 - A Twitch Application -> https://dev.twitch.tv/console
